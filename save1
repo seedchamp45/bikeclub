@@ -1,0 +1,194 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Jun 13, 2017 at 08:24 PM
+-- Server version: 5.6.34
+-- PHP Version: 7.1.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `bikeclub`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bike`
+--
+
+CREATE TABLE `bike` (
+  `id` int(11) NOT NULL,
+  `brand` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `spec` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `category` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `color` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `frame_sizes` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `frame` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `fork` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `derailleur_front` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `derailleur_rear` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `shifters` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `break_lever` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `brakes` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pic_bike_1` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pic_bike_2` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pic_bike_3` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pic_bike_4` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `gender` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `body_height` int(11) NOT NULL,
+  `body_weight` int(11) NOT NULL,
+  `min_torso_length` int(11) NOT NULL,
+  `max_torso_length` int(11) NOT NULL,
+  `min_arm_length` int(11) NOT NULL,
+  `max_arm_length` int(11) NOT NULL,
+  `min_shoulder_length` int(11) NOT NULL,
+  `max_shoulder_length` int(11) NOT NULL,
+  `price` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `bike`
+--
+
+INSERT INTO `bike` (`id`, `brand`, `spec`, `category`, `color`, `frame_sizes`, `frame`, `fork`, `derailleur_front`, `derailleur_rear`, `shifters`, `break_lever`, `brakes`, `pic_bike_1`, `pic_bike_2`, `pic_bike_3`, `pic_bike_4`, `gender`, `body_height`, `body_weight`, `min_torso_length`, `max_torso_length`, `min_arm_length`, `max_arm_length`, `min_shoulder_length`, `max_shoulder_length`, `price`) VALUES
+(0, 'mountain', 'big nine tfs 500', 'Mountain_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090140_Mountain_Bike1.jpg', '1497090140_Mountain_Bike2.jpg', '1497090140_Mountain_Bike3.jpeg', '1497090140_Mountain_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(1, 'mountain', 'big nine tfs 500', 'Road_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090156_Road_Bike1.jpg', '1497090156_Road_Bike2.jpg', '1497090156_Road_Bike3.jpeg', '1497090156_Road_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(2, 'mountain', 'big nine tfs 500', 'Lifestyle_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090161_Lifestyle_Bike1.jpg', '1497090161_Lifestyle_Bike2.jpg', '1497090161_Lifestyle_Bike3.jpeg', '1497090161_Lifestyle_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(3, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090166_Touring_Bike1.jpg', '1497090166_Touring_Bike2.jpg', '1497090166_Touring_Bike3.jpeg', '1497090166_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(4, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090171_Folding_Bike1.jpg', '1497090171_Folding_Bike2.jpg', '1497090171_Folding_Bike3.jpeg', '1497090171_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(5, 'mountain', 'big nine tfs 500', 'accessories', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090175_accessories1.jpg', '1497090175_accessories2.jpg', '1497090175_accessories3.jpeg', '1497090175_accessories4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(6, 'mountain', 'big nine tfs 500', 'Mountain_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090180_Mountain_Bike1.jpg', '1497090180_Mountain_Bike2.jpg', '1497090180_Mountain_Bike3.jpeg', '1497090180_Mountain_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(7, 'mountain', 'big nine tfs 500', 'Mountain_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090183_Mountain_Bike1.jpg', '1497090183_Mountain_Bike2.jpg', '1497090183_Mountain_Bike3.jpeg', '1497090183_Mountain_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(8, 'mountain', 'big nine tfs 500', 'Mountain_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090190_Mountain_Bike1.jpg', '1497090190_Mountain_Bike2.jpg', '1497090190_Mountain_Bike3.jpeg', '1497090190_Mountain_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 50000),
+(9, 'mountain', 'big nine tfs 500', 'Mountain_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090196_Mountain_Bike1.jpg', '1497090196_Mountain_Bike2.jpg', '1497090196_Mountain_Bike3.jpeg', '1497090196_Mountain_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 15000),
+(10, 'mountain', 'big nine tfs 500', 'Road_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090204_Road_Bike1.jpg', '1497090204_Road_Bike2.jpg', '1497090204_Road_Bike3.jpeg', '1497090204_Road_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 15000),
+(11, 'mountain', 'big nine tfs 500', 'Road_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090211_Road_Bike1.jpg', '1497090211_Road_Bike2.jpg', '1497090211_Road_Bike3.jpeg', '1497090211_Road_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 40000),
+(12, 'mountain', 'big nine tfs 500', 'Road_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090217_Road_Bike1.jpg', '1497090217_Road_Bike2.jpg', '1497090217_Road_Bike3.jpeg', '1497090217_Road_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 35000),
+(13, 'mountain', 'big nine tfs 500', 'Lifestyle_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090222_Lifestyle_Bike1.jpg', '1497090222_Lifestyle_Bike2.jpg', '1497090222_Lifestyle_Bike3.jpeg', '1497090222_Lifestyle_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 35000),
+(14, 'mountain', 'big nine tfs 500', 'Lifestyle_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090230_Lifestyle_Bike1.jpg', '1497090230_Lifestyle_Bike2.jpg', '1497090230_Lifestyle_Bike3.jpeg', '1497090230_Lifestyle_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 20000),
+(15, 'mountain', 'big nine tfs 500', 'Lifestyle_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090237_Lifestyle_Bike1.jpg', '1497090237_Lifestyle_Bike2.jpg', '1497090237_Lifestyle_Bike3.jpeg', '1497090237_Lifestyle_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 23000),
+(16, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090245_Touring_Bike1.jpg', '1497090245_Touring_Bike2.jpg', '1497090245_Touring_Bike3.jpeg', '1497090245_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 45000),
+(17, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090247_Touring_Bike1.jpg', '1497090247_Touring_Bike2.jpg', '1497090247_Touring_Bike3.jpeg', '1497090247_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 45000),
+(18, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090255_Touring_Bike1.jpg', '1497090255_Touring_Bike2.jpg', '1497090255_Touring_Bike3.jpeg', '1497090255_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 40000),
+(19, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090260_Touring_Bike1.jpg', '1497090260_Touring_Bike2.jpg', '1497090260_Touring_Bike3.jpeg', '1497090260_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 50000),
+(20, 'mountain', 'big nine tfs 500', 'Touring_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090264_Touring_Bike1.jpg', '1497090264_Touring_Bike2.jpg', '1497090264_Touring_Bike3.jpeg', '1497090264_Touring_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 55000),
+(21, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090268_Folding_Bike1.jpg', '1497090268_Folding_Bike2.jpg', '1497090268_Folding_Bike3.jpeg', '1497090268_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 55000),
+(22, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090273_Folding_Bike1.jpg', '1497090273_Folding_Bike2.jpg', '1497090273_Folding_Bike3.jpeg', '1497090273_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 75000),
+(23, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090278_Folding_Bike1.jpg', '1497090278_Folding_Bike2.jpg', '1497090278_Folding_Bike3.jpeg', '1497090278_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 15000),
+(24, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090281_Folding_Bike1.jpg', '1497090281_Folding_Bike2.jpg', '1497090281_Folding_Bike3.jpeg', '1497090281_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 15000),
+(25, 'mountain', 'big nine tfs 500', 'Folding_Bike', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090287_Folding_Bike1.jpg', '1497090287_Folding_Bike2.jpg', '1497090287_Folding_Bike3.jpeg', '1497090287_Folding_Bike4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 25000),
+(26, 'mountain', 'big nine tfs 500', 'accessories', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090297_accessories1.jpg', '1497090297_accessories2.jpg', '1497090297_accessories3.jpeg', '1497090297_accessories4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 12030),
+(27, 'mountain', 'big nine tfs 500', 'accessories', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090300_accessories1.jpg', '1497090300_accessories2.jpg', '1497090300_accessories3.jpeg', '1497090300_accessories4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 15030),
+(28, 'mountain', 'big nine tfs 500', 'accessories', 'nusta/grey/green', '15\"17\"19\"21\"', 'big nine tfs 500', 'Rock Shax XC30TK29 100', 'Shumano Deore H35 triple', 'Shumano Deore XT Shadow', 'Shimano Deore', 'attached', 'Shimano M445 180mm Cen/Shimano M445 160 mm Cen', '1497090305_accessories1.jpg', '1497090305_accessories2.jpg', '1497090305_accessories3.jpeg', '1497090305_accessories4.jpg', 'men', 170, 60, 50, 50, 50, 50, 50, 50, 18030);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bike_new`
+--
+
+CREATE TABLE `bike_new` (
+  `id` int(50) NOT NULL,
+  `image_name` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `heading` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `dates` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `date_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `bike_new`
+--
+
+INSERT INTO `bike_new` (`id`, `image_name`, `description`, `heading`, `dates`, `date_upload`) VALUES
+(0, '1497090392_bike news2.jpg', 'มีคนซื้อของเยะมาก', 'bike news', '14/5/2017', '2017-06-10 10:26:32'),
+(1, '1497090425_bike news2.jpg', 'มีคนซื้อของเยะมากเทสเทส', 'bike news', '15/4/2017', '2017-06-10 10:27:04'),
+(2, '1497090430_bike news2.jpg', 'มีคนซื้อของเยะมากเทสเทส', 'bike news', '15/2/2017', '2017-06-10 10:27:09');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `brand`
+--
+
+CREATE TABLE `brand` (
+  `id` int(50) NOT NULL,
+  `image_name` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `date_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `brand`
+--
+
+INSERT INTO `brand` (`id`, `image_name`, `description`, `date_upload`) VALUES
+(0, '1497089779_2.jpg', 'mountain', '2017-06-10 10:16:19');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `promotion`
+--
+
+CREATE TABLE `promotion` (
+  `id` int(11) NOT NULL,
+  `heading` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `image_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `promotion_time` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `dates` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `promotion`
+--
+
+INSERT INTO `promotion` (`id`, `heading`, `image_name`, `description`, `promotion_time`, `dates`) VALUES
+(0, '', '1497090456_2.jpg', 'โปรโมชั่น', '3 months', '2017-06-10 10:27:36'),
+(1, '', '1497090465_2.jpg', 'โปรโมชั่น test', '3 months', '2017-06-10 10:27:45'),
+(2, '', '1497090470_2.jpg', 'โปรโมชั่น test', '3 months', '2017-06-10 10:27:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `real_club`
+--
+
+CREATE TABLE `real_club` (
+  `id` int(11) NOT NULL,
+  `image_name` varchar(1000) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `real_club`
+--
+
+INSERT INTO `real_club` (`id`, `image_name`, `description`, `date`) VALUES
+(0, '1497090484_2.jpg', 'real_club', '2017-06-10 10:28:03'),
+(1, '1497090493_2.jpg', 'เทส', '2017-06-10 10:28:12'),
+(2, '1497090498_2.jpg', 'เทส', '2017-06-10 10:28:17'),
+(3, '1497345884_2.png', 'champ', '2017-06-13 09:24:43');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `tel` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `height` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `bike_type` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `gender` varchar(1000) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

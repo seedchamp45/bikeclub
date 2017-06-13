@@ -2,10 +2,10 @@
 print("start");
 console.log('eiei');
 $servername = "localhost";
-$username = "rootBike";
+$username = "rootBlackmores";
 $password = "Champpseedd45";
 $dbname = "bikeclub";
-
+// rootBike rootBlackmores
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
     

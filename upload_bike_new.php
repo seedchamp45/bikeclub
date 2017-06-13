@@ -5,7 +5,7 @@ $servername = "localhost";
 $username = "rootBike";
 $password = "Champpseedd45";
 $dbname = "bikeclub";
-
+// rootBike rootBlackmores
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
     

@@ -9,9 +9,11 @@
     	<br>
         <br>
 
-
-
     <input type="text" name="description" id="description" placeholder="description" onkeypress="this.style.width = ((this.value.length + 1) * 5) + 'px';">
+    	<br>
+        <br>
+
+    <input type="text" name="promotion_time" id="promotion_time" placeholder="promotion duration" onkeypress="this.style.width = ((this.value.length + 1) * 5) + 'px';">
     	<br>
         <br>
 

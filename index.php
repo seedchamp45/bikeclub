@@ -29,7 +29,21 @@ http://www.templatemo.com/tm-492-app-starter
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+  .img-logo
+  {
+    height: 1.2em;
+    margin-top: 15px;
+  }
+  @media (max-width: 650px) {
+      .img-logo
+  {
+    height: 1.2em;
+    margin-top: -2px;
+  }
+  }
 
+</style>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -45,7 +59,7 @@ http://www.templatemo.com/tm-492-app-starter
 <!-- Navigation Section -->
 
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top ">
      <div class="container">
 
           <div class="navbar-header">
@@ -54,40 +68,76 @@ http://www.templatemo.com/tm-492-app-starter
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="index.html" class="navbar-brand" rel="external"><img style = "height: 40px;" src="images/name.png"></a>
+               <a href="index.php" class="navbar-brand" rel="external">
+               <img class="img-logo" src="images/name.png"></a>
           </div>
 
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="mtb.html" rel="external" class="smoothScroll">MOUNTAIN BIKE</a></li>
-                    <li><a href="roadbike.html" rel="external" class="smoothScroll">ROAD BIKE</a></li>
-                    <li><a href="lifestyle_bike.html" rel="external" class="smoothScroll">LIFESTYLE BIKE</a></li>
-                <li><a href="touring_bike.html" rel="external" class="smoothScroll">TOURING BIKE</a></li>
-                <li><a href="folding_bike.html" rel="external" class="smoothScroll">FOLDING BIKE</a></li>
-                <li><a href="accessories.html" rel="external" class="smoothScroll">ACCESSORIES</a></li>
+                    <li><a href="mtb.php" rel="external" class="smoothScroll">MOUNTAIN BIKE</a></li>
+                    <li><a href="roadbike.php" rel="external" class="smoothScroll">ROAD BIKE</a></li>
+                    <li><a href="lifestyle_bike.php" rel="external" class="smoothScroll">LIFESTYLE BIKE</a></li>
+                <li><a href="touring_bike.php" rel="external" class="smoothScroll">TOURING BIKE</a></li>
+                <li><a href="folding_bike.php" rel="external" class="smoothScroll">FOLDING BIKE</a></li>
+                <li><a href="accessories.php" rel="external" class="smoothScroll">ACCESSORIES</a></li>
                </ul>
           </div>
 
      </div>
 </div>
 
-<div class="navbar navbar-default navbar-fixed-bottom">
+
+<div class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-xs">
      <div class="container">
 
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-left">
-                    <li><div id="function" class="functionBlock"><a href="#home" class="smoothScroll hovers">SERVICE & SUPPORT</a>
-                     <ul>
-        <li style="margin-top: -120px; background-color: #FFFF33;"><a href="fit_bike.html" rel="external" class="smoothScroll">FIT BIKE</a></li>
-        <li style="margin-top: -120px; background-color: #FFFF33;"><a href="clean_bike.html" rel="external" class="smoothScroll">CLEAN BIKE</a></li>
-    </ul>
+                    <li>
+
+                    <div id="function" class="functionBlock"><a href="#home" class="smoothScroll hovers">SERVICE & SUPPORT</a>
+
+                     <ul style="padding-left: 0px;">
+
+                        <li style="margin-top: -110px; padding-left: : -40px; background-color: rgba(0,0,0,0.5);" id="div_hover">
+                          <a href="fit_bike.php" rel="external" class="smoothScroll">FIT BIKE
+                          </a>
+                        </li>
+
+                        <li style="margin-top: -90px; padding-left: : -40px; background-color: rgba(0,0,0,0.5);" id="div_hover">
+                          <a href="clean_bike.php" rel="external" class="smoothScroll">CLEAN BIKE
+                          </a>
+                        </li>
+
+                      </ul>
 
                       </div>
                     </li>
-                    <li><a href="#about" rel="external" class="smoothScroll">THE REAL CLUB</a></li>
-                    <li><a href="aboutus.html" rel="external" class="smoothScroll">ABOUT US</a></li>
-                <li><a href="faq.html" rel="external" class="smoothScroll">FAQ</a></li>
-                <li><a href="#newsletter" rel="external" class="smoothScroll">STORE LOCATION</a></li>
+                    <li><a href="therealclub.php" rel="external" style="right: 50px;" class="smoothScroll">THE REAL CLUB</a></li>
+                    <li><a href="aboutus.php" rel="external" style="right: 50px;"  class="smoothScroll">ABOUT US</a></li>
+                <li><a href="faq.php" rel="external" style="right: 50px;"  class="smoothScroll">FAQ</a></li>
+                <li><a href="storelocation.php" rel="external" style="right: 50px;"  class="smoothScroll">STORE LOCATION</a></li>
+          
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<div class="navbar navbar-default navbar-fixed-bottom visible-xs visible-sm">
+     <div class="container">
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-left">
+                    
+                <li><a href="fit_bike.php" rel="external" class="smoothScroll">FIT BIKE
+                </a></li>
+                <li><a href="clean_bike.php" rel="external" class="smoothScroll">CLEAN BIKE
+                </a></li>
+                <li><a href="therealclub.php" rel="external" class="smoothScroll">THE REAL CLUB</a></li>
+                <li><a href="aboutus.php" rel="external" class="smoothScroll">ABOUT US</a></li>
+                <li><a href="faq.php" rel="external" class="smoothScroll">FAQ</a></li>
+                <li><a href="storelocation.php" rel="external" class="smoothScroll">STORE LOCATION</a></li>
           
                </ul>
           </div>
@@ -100,25 +150,25 @@ http://www.templatemo.com/tm-492-app-starter
   <div class="container">
     <div class="row visible-sm visible-xs" style="margin: 5%; padding: 5%; padding-top: 15%;">
       <div id="content" style="float: left; width: 50%;">
-        <a href="mtb.html" rel="external" class="smoothScroll">
+        <a href="mtb.php" rel="external" class="smoothScroll">
           <img src="images/mobile/mtb.jpg" style="width: 100%; ">
         </a>
-        <a href="touring_bike.html" rel="external" class="smoothScroll">
+        <a href="touring_bike.php" rel="external" class="smoothScroll">
           <img src="images/mobile/touring.jpg" style="width: 100%; ">
         </a>
-        <a href="lifestyle_bike.html" rel="external" class="smoothScroll">
+        <a href="lifestyle_bike.php" rel="external" class="smoothScroll">
           <img src="images/mobile/lifestyle.jpg" style="width: 100%; ">
         </a>
         
       </div>
       <div id="content" style="float: right; width: 50%; ">
-        <a href="roadbike.html" rel="external" class="smoothScroll">
+        <a href="roadbike.php" rel="external" class="smoothScroll">
           <img src="images/mobile/road.jpg" style="width: 100%; ">
         </a>
-        <a href="folding_bike.html" rel="external" class="smoothScroll">
+        <a href="folding_bike.php" rel="external" class="smoothScroll">
           <img src="images/mobile/fold.jpg" style="width: 100%; ">
         </a>
-        <a href="accessories.html" rel="external" class="smoothScroll">
+        <a href="accessories.php" rel="external" class="smoothScroll">
           <img src="images/mobile/accessories.jpg" style="width: 100%; ">
         </a>
       </div>
@@ -128,44 +178,44 @@ http://www.templatemo.com/tm-492-app-starter
       </div>
 
         <div id="content" style="width: 100%; ">
-        <a href="fit-a-bike.html" rel="external" class="smoothScroll">
+        <a href="signup.php" rel="external" class="smoothScroll">
           <img src="images/mobile/fitabike.jpg" style="width: 100%; ">
         </a>
 
     </div>
 </section>
 
-<section id="home" class="main hidden-sm hidden-xs">
+<section id="home" class="main hidden-sm hidden-xs" style="height: 100vh; position: relative;">
      <div class="overlay"></div>
 	<div class="container">
 
 
 		<div class="row hidden-sm hidden-xs">
 
-               <div class="wow fadeInUp col-md-10 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-0 span12 pagination-centered menu-index" data-wow-delay="0.2s" style = "width: 100%;">
-               <div class="container">
+               <div class="wow fadeInUp col-md-10 col-sm-10 col-xs-10 col-xs-offset-1 col-sm-offset-0 span12 pagination-centered menu-index" data-wow-delay="0.2s" style = "width: 100%; margin-top: -10%;">
+               <div class="container" style="font-size: 1.5em; font-weight: bold;">
                     <div class="row">
                          <ul class="nav navbar-nav navbar-right" style="margin-bottom: 5em; width: 60%; margin-top: 5em;">
                           
-                              <li><a href="mtb.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;">MTB</a></li>
-                              <li style="opacity: 0;">.............................................</li>
-                              <li><a href="roadbike.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;">ROAD</a></li>
-                              <li style="opacity: 0;">.............................................</li>
-                              <li><a href="touring_bike.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;">TOURING</a></li>
+                              <li><a href="mtb.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; top: 15px; right: 20px;">MTB</a></li>
+                      <!--         <li style="opacity: 0;">.............................................</li> -->
+                              <li><a href="roadbike.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; left: 100px;top: 15px;">ROAD</a></li>
+                             <!--  <li style="opacity: 0;">.............................................</li> -->
+                              <li><a href="touring_bike.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; left: 220px;top: 15px;">TOURING</a></li>
                          </ul>
                     </div>
                     <div class="row" style="height: 0.5em;">
                     </div>
                     <div class="row">
                          <ul class="nav navbar-nav navbar-left" style="margin-top: 5em;">
-                              <li style="opacity: 0;">.....................</li>
-                              <li><a href="lifestyle_bike.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;" >LIFESTYLE</a></li>
-                              <li style="opacity: 0;">.............................................</li>
-                              <li><a href="folding_bike.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;">THE FOLDING</a></li>
-                              <li style="opacity: 0;">.............................................</li>
-                              <li><a href="accessories.html" class="smoothScroll" rel="external" style="color: white; background-color: transparent;" >ACCESSORIES</a></li>
-                              <li style="opacity: 0;">................................................................................................</li>
-                              <li><a href="fit-a-bike.html" class="smoothScroll" rel="external" style="color: white; margin-top: 5em; background-color: transparent;" >FIT A BIKE</a></li>
+                           <!--    <li style="opacity: 0;">.....................</li> -->
+                              <li><a href="lifestyle_bike.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; bottom: 50px;left: 70px;;" >LIFESTYLE</a></li>
+                    <!--           <li style="opacity: 0;">.............................................</li> -->
+                              <li><a href="folding_bike.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; bottom: 50px;left: 150px;">THE FOLDING</a></li>
+                      <!--         <li style="opacity: 0;">.............................................</li> -->
+                              <li><a href="accessories.php" class="smoothScroll" rel="external" style="color: white; background-color: transparent; bottom: 50px;left: 200px;" >ACCESSORIES</a></li>
+                           <!--    <li style="opacity: 0;">................................................................................................</li> -->
+                              <li><a href="signup.php" class="smoothScroll" rel="external" style="color: white; margin-top: 5em; background-color: transparent; bottom: 70px; left: 450px;">FIT A BIKE</a></li>
                          </ul>
                     </div>
                
@@ -287,12 +337,13 @@ include_once("db_config.php");
 
     $image_name = $rowdata['image_name'];
     $description = $rowdata['description'];
+    $id = $rowdata['id'];
    
 
 
 
-    echo '<div class="item col-md-3 col-sm-3 wow fadeInUp hidden-sm hidden-xs" data-wow-delay="0.9s">
-                         <a href= upload_promotion/'. $image_name .' " class="image-popup">
+    echo '<div class="item col-md-3 col-sm-3 wow fadeInUp hidden-sm hidden-xs" data-wow-delay="0.9s" style = "width: 100%;">
+                         <a href="promotion.php?id='.$id.'" rel="external">  
                               <img src="upload_promotion/' . $image_name .'" class="img-responsive" alt='. $description .'>
                          </a>
                     </div>';
@@ -435,7 +486,7 @@ include_once("db_config.php");
 
 
 
-  $db_check = $db->query("SELECT * FROM promotion");
+  $db_check = $db->query("SELECT * FROM real_club");
   
 
 
@@ -449,7 +500,7 @@ include_once("db_config.php");
 
 
 
-    echo '<div class="item col-md-3 col-sm-3 wow fadeInUp hidden-sm hidden-xs" data-wow-delay="0.9s">
+    echo '<div class="item col-md-3 col-sm-3 wow fadeInUp hidden-sm hidden-xs" data-wow-delay="0.9s" style="width: 100%;">
                          <a href="upload_real_club/'. $image_name .'" class="image-popup">
                               <img src="upload_real_club/'. $image_name .'" class="img-responsive" alt="'.$description .'">
                          </a>

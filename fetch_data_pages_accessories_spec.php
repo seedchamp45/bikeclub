@@ -6,8 +6,8 @@ include_once("db_config.php");
   $pricemin = $_POST["pricemin"];
   $pricemax = $_POST["pricemax"];
 
-  echo $brand .".,,,,,".$pricemin. "......" .$pricemax;
-  $db_check = $db->query("SELECT * FROM bike where category = 'accessories' AND price >= $pricemin AND price <= $pricemax AND brand = ". $brand);
+  $db_check = $db->query("SELECT * FROM bike where category = 'Mountain_Bike' 
+    AND price >= $pricemin AND price <= $pricemax AND brand = '$brand'");
   
 
 

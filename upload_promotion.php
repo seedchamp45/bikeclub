@@ -5,7 +5,7 @@ $servername = "localhost";
 $username = "rootBike";
 $password = "Champpseedd45";
 $dbname = "bikeclub";
-
+// rootBike rootBlackmores
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
     
@@ -67,6 +67,9 @@ if ($uploadOk == 0) {
 
   
         $description = $_POST['description'];
+
+
+        $promotion_time = $_POST['promotion_time'];
     
         
           
@@ -75,8 +78,8 @@ if ($uploadOk == 0) {
 
     
 
-        $sql = "INSERT INTO promotion (id, image_name, description)
-        VALUES ('$row_cnt', '$newfilename1','$description')";
+        $sql = "INSERT INTO promotion (id, image_name, description, promotion_time)
+        VALUES ('$row_cnt', '$newfilename1','$description', '$promotion_time')";
         if (mysqli_query($conn, $sql)) {
             for($i = 0; $i < 1; $i++) 
             {

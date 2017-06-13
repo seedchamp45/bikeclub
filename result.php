@@ -40,6 +40,21 @@ http://www.templatemo.com/tm-492-app-starter
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.3/css/bootstrap-slider.css" type="text/css" href="">
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+  .img-logo
+  {
+    height: 1.2em;
+    margin-top: 15px;
+  }
+  @media (max-width: 650px) {
+      .img-logo
+  {
+    height: 1.2em;
+    margin-top: -2px;
+  }
+  }
+
+</style>
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -53,9 +68,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 
 
-<!-- Navigation Section -->
-
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top ">
      <div class="container">
 
           <div class="navbar-header">
@@ -64,40 +77,54 @@ http://www.templatemo.com/tm-492-app-starter
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="index.html" class="navbar-brand" rel="external"><img style = "height: 40px;" src="images/name.png"></a>
+               <a href="index.php" class="navbar-brand" rel="external">
+               <img class="img-logo" src="images/name.png"></a>
           </div>
 
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="mtb.html" rel="external" class="smoothScroll">MOUNTAIN BIKE</a></li>
-                    <li><a href="roadbike.html" rel="external" class="smoothScroll">ROAD BIKE</a></li>
-                    <li><a href="lifestyle_bike.html" rel="external" class="smoothScroll">LIFESTYLE BIKE</a></li>
-                <li><a href="touring_bike.html" rel="external" class="smoothScroll">TOURING BIKE</a></li>
-                <li><a href="folding_bike.html" rel="external" class="smoothScroll">FOLDING BIKE</a></li>
-                <li><a href="accessories.html" rel="external" class="smoothScroll">ACCESSORIES</a></li>
+                    <li><a href="mtb.php" rel="external" class="smoothScroll">MOUNTAIN BIKE</a></li>
+                    <li><a href="roadbike.php" rel="external" class="smoothScroll">ROAD BIKE</a></li>
+                    <li><a href="lifestyle_bike.php" rel="external" class="smoothScroll">LIFESTYLE BIKE</a></li>
+                <li><a href="touring_bike.php" rel="external" class="smoothScroll">TOURING BIKE</a></li>
+                <li><a href="folding_bike.php" rel="external" class="smoothScroll">FOLDING BIKE</a></li>
+                <li><a href="accessories.php" rel="external" class="smoothScroll">ACCESSORIES</a></li>
                </ul>
           </div>
 
      </div>
 </div>
 
-<div class="navbar navbar-default navbar-fixed-bottom">
+
+<div class="navbar navbar-default navbar-fixed-bottom hidden-sm hidden-xs">
      <div class="container">
 
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-left">
-                    <li><div id="function" class="functionBlock"><a href="#home" class="smoothScroll hovers">SERVICE & SUPPORT</a>
-                     <ul>
-        <li style="margin-top: -120px; background-color: #FFFF33;"><a href="fit_bike.html" rel="external" class="smoothScroll">FIT BIKE</a></li>
-        <li style="margin-top: -120px; background-color: #FFFF33;"><a href="clean_bike.html" rel="external" class="smoothScroll">CLEAN BIKE</a></li>
-    </ul>
+                    <li>
+
+                    <div id="function" class="functionBlock"><a href="#home" class="smoothScroll hovers">SERVICE & SUPPORT</a>
+
+                     <ul style="padding-left: 0px;">
+
+                        <li style="margin-top: -110px; padding-left: : -40px; background-color: rgba(0,0,0,0.5);" id="div_hover">
+                          <a href="fit_bike.php" rel="external" class="smoothScroll">FIT BIKE
+                          </a>
+                        </li>
+
+                        <li style="margin-top: -90px; padding-left: : -40px; background-color: rgba(0,0,0,0.5);" id="div_hover">
+                          <a href="clean_bike.php" rel="external" class="smoothScroll">CLEAN BIKE
+                          </a>
+                        </li>
+
+                      </ul>
 
                       </div>
                     </li>
-                    <li><a href="#about" rel="external" class="smoothScroll">THE REAL CLUB</a></li>
-                    <li><a href="aboutus.html" rel="external" class="smoothScroll">ABOUT US</a></li>
-                <li><a href="faq.html" rel="external" class="smoothScroll">FAQ</a></li>
-                <li><a href="#newsletter" rel="external" class="smoothScroll">STORE LOCATION</a></li>
+                    <li><a href="therealclub.php" rel="external" style="right: 50px;" class="smoothScroll">THE REAL CLUB</a></li>
+                    <li><a href="aboutus.php" rel="external" style="right: 50px;"  class="smoothScroll">ABOUT US</a></li>
+                <li><a href="faq.php" rel="external" style="right: 50px;"  class="smoothScroll">FAQ</a></li>
+                <li><a href="storelocation.php" rel="external" style="right: 50px;"  class="smoothScroll">STORE LOCATION</a></li>
           
                </ul>
           </div>
@@ -106,6 +133,26 @@ http://www.templatemo.com/tm-492-app-starter
 </div>
 
 
+<div class="navbar navbar-default navbar-fixed-bottom visible-xs visible-sm">
+     <div class="container">
+
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-left">
+                    
+                <li><a href="fit_bike.php" rel="external" class="smoothScroll">FIT BIKE
+                </a></li>
+                <li><a href="clean_bike.php" rel="external" class="smoothScroll">CLEAN BIKE
+                </a></li>
+                <li><a href="therealclub.php" rel="external" class="smoothScroll">THE REAL CLUB</a></li>
+                <li><a href="aboutus.php" rel="external" class="smoothScroll">ABOUT US</a></li>
+                <li><a href="faq.php" rel="external" class="smoothScroll">FAQ</a></li>
+                <li><a href="storelocation.php" rel="external" class="smoothScroll">STORE LOCATION</a></li>
+          
+               </ul>
+          </div>
+
+     </div>
+</div>
 <!-- Home Section -->
 
 
@@ -123,7 +170,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 
 
-<section id="screenshot" style="background-color: #fff; height: 65em;">
+<section id="screenshot" style="background-color: #fff; height: 65em;" class="hidden-xs hidden-sm">
   <div id="container">
   <?php 
   include_once("db_config.php");
@@ -153,19 +200,19 @@ http://www.templatemo.com/tm-492-app-starter
   echo'
     <div id="content" style="float: left; width: 60%;">
       <section>
-        <img src="images/'.$pic_bike_1.'" style="width: 90%;  margin: auto;">
+        <img src="upload/'.$pic_bike_1.'" style="width: 90%;  margin: auto;">
       </section>
       
       <section style="margin-top: 2em;">
         <div id="container ">
           <div id="content" style="float: left; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 10em; margin-right: 1.5%; margin-left: 1.5%;">
-            <img src="images/'.$pic_bike_2.'" style="width: 100%; height: 100%;">
+            <img src="upload/'.$pic_bike_2.'" style="width: 100%; height: 100%;">
           </div>
           <div id="content" style="float: right; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 10em;margin-right: 1.5%; margin-left: 1.5%;">
-            <img src="images/'.$pic_bike_3.'" style="width: 100%; height: 100%;">
+            <img src="upload/'.$pic_bike_3.'" style="width: 100%; height: 100%;">
           </div>
           <div id="content" style="display: inline-block; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 10em;margin-right: 1.5%; margin-left: 1.5%;">
-            <img src="images/'.$pic_bike_4.'" style="width: 100%; height: 100%;">
+            <img src="upload/'.$pic_bike_4.'" style="width: 100%; height: 100%;">
           </div>
         </div>
       </section>    
@@ -200,7 +247,95 @@ http://www.templatemo.com/tm-492-app-starter
       <br>
       <p style="width: 80%; background-color: #FFCC33; color: white; margin: auto; text-align: center; height: 2em; font-size: 3em; padding-top: 0.7em;">
         ' . $price .'
-      </p>';
+      </p>
+      </div>';
+}
+?>
+
+  </div>        
+</section>
+
+
+<section id="screenshot" style="background-color: #fff; height: 70em; " class="visible-xs visible-sm">
+  <div id="container">
+  <?php 
+  include_once("db_config.php");
+  $id = $_GET["id"];
+  $db_check = $db->query("SELECT * FROM bike where id =" .$id);
+
+   
+
+  while($rowdata = mysqli_fetch_assoc($db_check)){ 
+
+  $pic_bike_1 = $rowdata['pic_bike_1'];
+  $pic_bike_2 = $rowdata['pic_bike_2'];
+  $pic_bike_3 = $rowdata['pic_bike_3'];
+  $pic_bike_4 = $rowdata['pic_bike_4'];
+  $brand = $rowdata['brand'];
+  $spec = $rowdata['spec'];
+  $color = $rowdata['color'];
+  $frame_sizes = $rowdata['frame_sizes'];
+  $frame = $rowdata['frame'];
+  $fork = $rowdata['fork'];
+  $derailleur_front = $rowdata['derailleur_front'];
+  $derailleur_rear = $rowdata['derailleur_rear'];
+  $shifters = $rowdata['shifters'];
+  $brakes = $rowdata['brakes'];
+  $break_lever = $rowdata['break_lever'];
+  $price = $rowdata['price'];
+  echo'
+  
+      <section>
+        <img src="upload/'.$pic_bike_1.'" style="width: 90%;  margin: auto;">
+      </section>
+      
+      <section style="margin-top: 2em; ">
+        <div id="container ">
+          <div id="content" style="float: left; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 5em; margin-right: 1.5%; margin-left: 1.5%;">
+            <img src="upload/'.$pic_bike_2.'" style="width: 3em; height: 3em; margin:auto; margin-top:1em;">
+          </div>
+          <div id="content" style="float: right; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 5em;margin-right: 1.5%; margin-left: 1.5%;">
+            <img src="upload/'.$pic_bike_3.'" style="width: 3em; height: 3em; margin:auto; margin-top:1em;">
+          </div>
+          <div id="content" style="display: inline-block; width: 30.33%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); height: 5em;margin-right: 1.5%; margin-left: 1.5%;">
+            <img src="upload/'.$pic_bike_4.'" style="width: 3em; height: 3em; margin:auto; margin-top:1em;">
+          </div>
+        </div>
+      </section>    
+
+
+    <section style= "font-size:0.2em;">
+      <p style="width: 80%; background-color: #FFCC33; color: white; margin: auto; text-align: center;">
+        ' . $price .'
+      </p>
+      <p style="font-weight: bold;">'. $brand .'</p>
+      <br>
+      <p>' . $spec .'</p>
+      <br>
+      <p>COLORS : ' . $color .'</p>
+      <br>
+      <p>FRAME SIZES : ' . $frame_sizes .'"</p>
+      <br>
+      <p>FRAME : ' . $frame .'</p>
+      <br>
+      <p>FORK : ' . $fork .'</p>
+      <br>
+      <p>DERAILLEUR FRONT : ' . $derailleur_front .'</p>
+      <br>
+      <p>DERAILLEUR REAR : ' . $derailleur_rear .'</p>
+      <br>
+      <p>SHIFTER : ' . $shifters .'</p>
+      <br>
+      <p>BRAKES LEVER : ' . $break_lever .'</p>
+      <br>
+      <p>BRAKES : ' . $brakes .'</p>
+      <br>
+      <p style="width: 80%; background-color: #484848; color: white; margin: auto; text-align: center;">
+        IN STOCK
+      </p>
+      <br>
+    
+      </section>';
 }
 ?>
 
@@ -209,8 +344,12 @@ http://www.templatemo.com/tm-492-app-starter
                     
 </section>
 
-<section id="screenshot" style="background-color: #fff;">
-    <div class="cd-full-width">
+<section class="visible-xs visible-sm">
+  <p>MORE BIKE</p>
+</section>
+
+<section id="screenshot" style="background-color: #fff; padding-top: 5em;" >
+  <div class="cd-full-width">
 
                         <div class="container-fluid js-tm-page-content">
                             
@@ -219,7 +358,7 @@ http://www.templatemo.com/tm-492-app-starter
 
                                 <div class="tm-img-gallery " style="width: 100%;">
                                   <div id = "addDiv">
-                                    <div id = "results" style="background-color: #bababa">
+                                    <div id = "results" style="background-color: #bababa; width 30.33%;">
                                       
                                     </div>
                                   </div>
@@ -237,9 +376,11 @@ http://www.templatemo.com/tm-492-app-starter
 </section>
 
 
+
+
 <!-- Footer Section -->
 
-<footer>
+<footer class="hidden-xs hidden-sm">
      <div class="container">
           <div class="row">
 

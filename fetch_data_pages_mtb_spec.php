@@ -3,17 +3,21 @@ include_once("db_config.php");
 
 
   $brand = $_POST["brand"];
+  // $pricemin = "eiei";
   $pricemin = $_POST["pricemin"];
   $pricemax = $_POST["pricemax"];
 
-  echo $brand .".,,,,,".$pricemin. "......" .$pricemax;
-  $db_check = $db->query("SELECT * FROM bike where category = 'Mountain_Bike' AND price >= $pricemin AND price <= $pricemax AND brand = ". $brand);
+  //echo $brand ." yo1 ".$pricemin. " yo2 " .$pricemax;
+
+
+  $db_check = $db->query("SELECT * FROM bike where category = 'Mountain_Bike' 
+    AND price >= $pricemin AND price <= $pricemax AND brand = '$brand'");
   
 
 
 
   while($rowdata = mysqli_fetch_assoc($db_check)){ //fetch values
-    
+     
 
     $pic = $rowdata['pic_bike_1'];
     $brand = $rowdata['brand'];

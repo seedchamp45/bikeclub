@@ -16,6 +16,7 @@ body {
 }
 
 
+
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
@@ -108,7 +109,7 @@ a {
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #3FF;
+  color: rgb(247, 189, 50);
   outline: none;
 }
 
@@ -222,6 +223,7 @@ a:hover, a:active, a:focus {
   letter-spacing: 2px;
   line-height: 50px;
   margin: 0;
+  height: 40px;
 }
 
 .navbar-default .navbar-brand span {
@@ -242,19 +244,19 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #1dc9e3;
+    color: rgb(247, 189, 50);
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #656565;
+     color: rgb(247, 189, 50);
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #1dc9e3;
+    color:  rgb(247, 289, 50);;
     background-color: transparent;
 }
 
@@ -388,7 +390,7 @@ a:hover, a:active, a:focus {
 #mountain-bike
 {
       background: url('../images/mountain-bike.png') no-repeat;
-    background-size: 100% ;
+    background-size: 100% 100%;
    margin-top: -5em;
       height: 40vh;
 
@@ -406,12 +408,23 @@ a:hover, a:active, a:focus {
     position: relative;*/
 }
 
+#mountain-bike-small
+{
+      background: url('../images/mountain-bike.png') no-repeat;
+    background-size: 100% 100%;
+ 
+      height: 300px;
+
+    background-position: top center;
+
+}
+
 #clean-bike
 {
       background: url('../images/clean-bike.png') no-repeat;
-    background-size: 100% ;
+     background-size: 100% 100%;
    margin-top: -5em;
-      height: 60vh;
+      height: 40vh;
 
     background-position: center center;
 /*    color: #ffffff;
@@ -491,13 +504,15 @@ a:hover, a:active, a:focus {
 }
 #fit-bike
 {
+  
       background: url('../images/fit-a-bike.png') no-repeat;
-    background-size: 100% 100%;
-    background-position: top center;
+      background-size: 100% 100%;
    margin-top: -5em;
-      height: 70vh;
+      height: 40vh;
 
     background-position: center center;
+
+  /*  background-position: center center;*/
 /*    color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -539,6 +554,7 @@ footer .container
 .functionBlock { width:250px; height:100px;  padding:15px;}
 .functionBlock ul { visibility: hidden; padding-bottom: 1000px; margin-bottom: 100px;}
 .functionBlock.show ul { visibility: visible; padding-bottom: 1000px; margin-bottom: 100px;}
+
 .menu-index
 {
     background: url('../images/menu2.png') no-repeat;
@@ -688,6 +704,10 @@ footer .container
 /*---------------------------------------
     Newsletter section              
 -----------------------------------------*/
+#navbar-cat
+{
+  height: 10vh;
+}
 
 #newsletter {
     background: #535bd4 url('../images/newsletter-bg.jpg') no-repeat;
@@ -956,6 +976,8 @@ footer p {
 }
 
 
+
+
 /*---------------------------------------
    Back top         
 -----------------------------------------*/
@@ -994,6 +1016,7 @@ footer p {
 }
 
 @media (max-width: 980px) {
+  
 
   h1 {
     font-size: 38px;
@@ -1054,6 +1077,14 @@ footer p {
 
   .navbar-default .navbar-brand {
     line-height: 20px;
+
+
+
+  }
+
+    .navbar-default .navbar-brand a img
+  {
+        height: 20px;
   }
 
   .navbar-default .navbar-nav li a {
@@ -1080,7 +1111,41 @@ footer p {
 
 }
 
+#div_hover
+{
+   background-color: rgba(0,0,0,0.5);
+  list-style-type:none ;
+  background-size: 90% 100%;
+}
+
+#div_hover ul:hover
+{
+   background-color: rgba(0,0,0,0.5);
+  list-style-type:none ;
+  background-size: 90% 100%;
+}
+
+#div_hover li:hover{
+
+ background-color: rgb(247,189,50) !important ;
+ background-size: 100px 100px !important;
+ color: white;  
+}
+
+.price-slider li
+{
+  width: 30em;
+}
+
+
 @media (max-width: 650px) {
+
+  .price-slider li
+{
+  width: 15em;
+}
+
+
 
   h1 {
     font-size: 28px;
